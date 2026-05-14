@@ -10,8 +10,8 @@ This lab environment is built around a **Digital Forensics** scenario. It uses *
 
 | Host | Role | Network | CIDR | IP |
 |------|------|---------|------|----|
-| wavm | Analyst Workstation (Win 11) | network-3 | 192.168.10.0/24 | 192.168.10.10 |
-| wvvm | Victim/Evidence Machine (WS 2025) | network-3 | 192.168.10.0/24 | 192.168.10.20 |
+| wavm | Analyst Workstation (Win 11) | network-2 | 192.168.10.0/24 | 192.168.10.10 |
+| wvvm | Victim/Evidence Machine (WS 2025) | network-2 | 192.168.10.0/24 | 192.168.10.20 |
 
 ---
 
@@ -43,6 +43,4 @@ User `user` / `btcmp16@admin` (admin enabled).
 ---
 
 ## Notes
-- Both machines use WinRM as the management protocol.
-- Chocolatey is bootstrapped on WAVM to facilitate package installation.
 - The `community.windows` Ansible collection is required for the `win_unzip` module used to extract Registry Explorer.
